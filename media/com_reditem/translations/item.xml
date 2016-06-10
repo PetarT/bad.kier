@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<contentelement type="contentelement">
+	<name>RedITEM Item</name>
+	<author>redCOMPONENT</author>
+	<copyright>Copyright (C) 2008 - 2015 redCOMPONENT.com. All rights reserved.</copyright>
+	<version>1.0.0</version>
+	<description>Items Table Definition for the RedITEM extension</description>
+	<reference>
+		<table name="reditem_items">
+			<field type="referenceid" name="id">ID</field>
+			<field type="text" name="title">Item Name</field>
+		</table>
+		<component>
+			<form>com_reditem#item#cid#task#!edit</form>
+		</component>
+	</reference>
+</contentelement>

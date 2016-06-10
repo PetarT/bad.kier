@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<contentelement type="contentelement">
+	<name>RedITEM Template</name>
+	<author>redCOMPONENT</author>
+	<copyright>Copyright (C) 2008 - 2015 redCOMPONENT.com. All rights reserved.</copyright>
+	<version>1.0.0</version>
+	<description>Templates Table Definition for the RedITEM extension</description>
+	<reference>
+		<table name="reditem_templates">
+			<field type="referenceid" name="id">ID</field>
+			<field type="text" name="name">Template Name</field>
+			<field type="htmltext" name="content">Template Content</field>
+		</table>
+		<component>
+			<form>com_reditem#template#cid#task#!edit</form>
+		</component>
+	</reference>
+</contentelement>

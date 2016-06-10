@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter" addfieldpath="/libraries/reditem/form/fields">
+		<field
+			name="search"
+			type="text"
+			label="COM_REDCORE_FILTER_SEARCH_DESC"
+			placeholder="JSEARCH_FILTER"
+			class="js-enter-submits" />
+
+        <field
+                name="itemtypes"
+                type="ritypelist"
+                onchange="this.form.submit();"
+                label="COM_REDITEM_FILTER_TYPES"
+                description="COM_REDITEM_FILTER_TYPES_DESCRIPTION">
+            <option value="">COM_REDITEM_SELECT</option>
+        </field>
+
+		<field
+			name="fieldtypes"
+			type="rifieldtypes"
+			onchange="this.form.submit();"
+			label="COM_REDITEMCATEGORYFIELDS_FIELD_FIELDTYPE"
+			description="COM_REDITEMCATEGORYFIELDS_FIELD_FIELDTYPE_DESCRIPTION"
+			default="">
+			<option value="">COM_REDITEMCATEGORYFIELDS_FIELD_SELECT_TYPE</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="fields_limit"
+			type="rlimitbox"
+			class="inputbox input-mini chzn"
+			default="25"
+			label="JGLOBAL_ORDERING_LIST_LIMIT"
+			description="JGLOBAL_ORDERING_LIST_LIMIT_DESC"
+			onchange="this.form.submit();" />
+	</fields>
+</form>

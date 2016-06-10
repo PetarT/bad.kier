@@ -1,0 +1,1 @@
+ <div class="hidden">{image_brand_value}, {link_brand_value}</div>

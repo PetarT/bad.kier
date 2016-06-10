@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="field-information" addfieldpath="/libraries/reditem/form/fields">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			class="readonly"
+			readonly="true" />
+
+		<field
+			name="name"
+			type="text"
+			default=""
+			label="COM_REDITEMCATEGORYFIELDS_FIELD_NAME"
+			required="true"
+			class="input-normal"
+			description="COM_REDITEMCATEGORYFIELDS_FIELD_NAME_DESCRIPTION" />
+
+		<field
+			name="fieldcode"
+			type="hidden"
+			class="input-normal"
+			readonly="true"
+			label="COM_REDITEMCATEGORYFIELDS_FIELD_FIELDCODE"
+			description="COM_REDITEMCATEGORYFIELDS_FIELD_FIELDCODE_DESCRIPTION" />
+
+		<field name="type"
+			type="rifieldtypes"
+			class="chosen"
+			label="COM_REDITEMCATEGORYFIELDS_FIELD_FIELDTYPE"
+			description="COM_REDITEMCATEGORYFIELDS_FIELD_FIELDTYPE_DESCRIPTION"
+			required="true"
+			onchange="javascript:showHideOptions();"
+			default="">
+			<option value="">COM_REDITEMCATEGORYFIELDS_FIELD_SELECT_TYPE</option>
+		</field>
+
+		<field name="options"
+			type="textarea"
+			cols="100"
+			rows="5"
+			class="input-normal"
+			label="COM_REDITEMCATEGORYFIELDS_FIELD_OPTIONS"
+			description="COM_REDITEMCATEGORYFIELDS_FIELD_OPTIONS_DESCRIPTION" />
+
+		<field name="published" type="radio"
+			   label="JPUBLISHED"
+			   class="btn-group"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+        <field
+                name="type_id"
+                type="ritypelist"
+                label="COM_REDITEM_FILTER_TYPES"
+                description="COM_REDITEM_FILTER_TYPES_DESCRIPTION">
+            <option value="">COM_REDITEM_SELECT</option>
+        </field>
+	</fieldset>
+</form>

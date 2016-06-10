@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" client="admin" type="plugin" group="reditem_quickicon" method="upgrade">
+	<name>PLG_REDITEM_QUICKICON_CATEGORYFIELDS</name>
+	<version>1.0</version>
+	<creationDate>February 2015</creationDate>
+	<author>redCOMPONENT.com</author>
+	<copyright>redCOMPONENT.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>PLG_REDITEM_QUICKICON_CATEGORYFIELDS_DESCRIPTION</description>
+	<files>
+		<filename plugin="categoryfields">categoryfields.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_reditem_quickicon_categoryfields.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_reditem_quickicon_categoryfields.sys.ini</language>
+	</languages>
+</extension>

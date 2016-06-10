@@ -1,0 +1,126 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+
+	
+	
+	#featured .description-banner
+	{
+		font-size: 27px;
+
+	}
+
+	.box-custom .image img,
+	.custom-field.box-2 img,
+	.box-gallery .gallery-image img
+	{
+		min-height: auto;
+		max-height: none;
+	}
+	.box-custom .description
+	{
+		min-height: auto;
+		max-height: none;
+		padding: 20px 0;
+		.title
+		{
+			margin-top: 0;
+		}
+	}
+	.box-custom:nth-child(even) .image
+	{
+		float: none;
+	}
+	.custom-field
+	{
+		min-height: auto !important;
+		max-height: none !important;
+	}
+	.custom-field.box-2 .description
+	{
+		padding: 0 50px 20px;
+		.title
+		{
+			font-size: 30px;
+		}
+		.short-description
+		{
+			font-size: 20px;
+		}
+	}
+	.box-map .information-map
+	{
+		min-height: auto;
+		max-height: none;
+		padding: 10px 20px 20px;
+	}
+
+	.all-box-bottom .box-content
+	{
+		padding: 20px !important;
+	}
+
+	.detail-page
+	{
+		padding: 0;
+	}
+	.item-detail.box-custom .description
+	{
+		min-height: auto;
+		max-height: none;
+		.title
+		{
+			font-size: 30px;
+		}
+	} 
+
+	.reditem_gallery a
+	{
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		&:focus
+		{
+			outline: none;
+		}
+		img
+		{
+			margin-bottom: 10px;
+		}	
+	} 
+
+	.item-detail .description
+	{
+		min-height: 100px;
+		padding: 20px 0;
+		.title
+		{
+			margin: 0;
+			font-size: 30px;
+		}
+	}
+	
+}
+
+@media(max-width:650px){
+	.box-custom .description{
+		min-height: 208px;
+		max-height: 208px;
+	}
+	.box-custom.banner-middle .image img
+	{
+		min-height: 320px;
+		max-height: 320px;
+	}
+	.reditem_content  .box-custom.box-nytbad .description
+	{
+		min-height: 140px;
+		max-height: 140px;
+	}
+
+}
+
+
+

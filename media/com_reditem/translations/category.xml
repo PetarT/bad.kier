@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<contentelement type="contentelement">
+	<name>RedITEM Category</name>
+	<author>redCOMPONENT</author>
+	<copyright>Copyright (C) 2008 - 2015 redCOMPONENT.com. All rights reserved.</copyright>
+	<version>1.0.0</version>
+	<description>Categories Table Definition for the RedITEM extension</description>
+	<reference>
+		<table name="reditem_categories">
+			<field type="referenceid" name="id">ID</field>
+			<field type="text" name="title">Category Name</field>
+			<field type="htmltext" name="introtext">Category Introtext</field>
+			<field type="htmltext" name="fulltext">Category Fulltext</field>
+		</table>
+		<component>
+			<form>com_reditem#category#cid#task#!edit</form>
+		</component>
+	</reference>
+</contentelement>
